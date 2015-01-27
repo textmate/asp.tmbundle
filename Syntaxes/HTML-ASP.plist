@@ -14,6 +14,35 @@
 	<array>
 		<dict>
 			<key>begin</key>
+			<string>&lt;%--</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.html</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>--%&gt;</string>
+			<key>name</key>
+			<string>comment.block.asp.server</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>--</string>
+					<key>name</key>
+					<string>invalid.illegal.bad-comments-or-CDATA.html</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#embedded-code</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>&lt;%=?</string>
 			<key>beginCaptures</key>
 			<dict>
